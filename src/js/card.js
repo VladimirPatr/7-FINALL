@@ -1,8 +1,14 @@
 const cardSection = document.querySelector('.card');
 const cardDescription = document.querySelector('.card__description');
 const recommendationsSection = document.querySelector('.recommendations');
+const iconBasket = document.querySelector('.header__item-basket');
 const URLmain = 'http://localhost:3000/api/goods';
 const hrefSrc = window.location.href.split('/').slice(0, -1).join('/');
+
+// Переход в корзину по нажатию по иконке
+iconBasket.addEventListener('click', (e) => {
+    window.location.href = `${hrefSrc}/shop.html`;
+})
 
 // Функция рендера карточки
 const cardRender = (data) => {
