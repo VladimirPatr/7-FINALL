@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/shop.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="Иконка логотипа"></a>
+            <a href="#" class="header__menu">Меню</a>
+            <form class="header__form">
+                <input name="search" placeholder="Я ищу..." type="search">
+                <button type="submit" aria-label="Кнопка поиска"></button>
+              </form>
+              <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        <img src="img/icon-profile.svg" alt="иконка профиля">
+                        <p>Профиль</p>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        <img src="img/icon-cart.svg" alt="иконка козины">
+                        <p>Корзина</p>
+                    </a>
+                </li>
+                <li class="header__item" >
+                    <a href="#" class="header__link">
+                        <img src="img/icon-favorite.svg" alt="иконка избранного">
+                        <p>Избранное</p>
+                    </a>
+                </li>
+              </ul>
+        </div>
+    </header>
+    <main class="cards">
+        <div class="container">
+            <nav class="breadcrams">
+                <ul class="breadcrams__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrams__item" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a class="breadcrams__link" itemprop="item" href="index.html">
+                      <span itemprop="name">Главная</span></a>
+                      <meta itemprop="position" content="1" />
+                    </li>
+                    <li>
+                        <img src="img/icon-arrow.svg" alt="">
+                    </li>
+                    <li class="breadcrams__item" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a class="breadcrams__link" itemprop="item" href="#">
+                      <span itemprop="name">Корзина</span></a>
+                      <meta itemprop="position" content="2" />
+                    </li>
+                  </ul>
+            </nav>
+            <section class="basket">
+                <div class="basket__wrapper">
+                    <div class="basket__products">
+                        <div class="basket__products-title">
+                            <h2>Корзина<sup><sup>2</sup></sup></h2>
+                            <div class="basket__products-wrapper">
+                                <label class="basket__label"><input class="basket__checkbox-all" type="checkbox" name="basket" value="select all"  lang="ru">Выбрать всe</label>
+                                <button class="btn-basket-del"><img src="img/icon-basket.svg" alt="Кнопка удаления из корзины"></button>
+                            </div>
+                        </div>
+                        <!-- <div class="basket__products-items">
+                            <div class="basket__products-item">
+                                <input type="checkbox" name="basket" value="select item"  lang="ru">
+                                <img src="img/product-1.jpg" alt="Картинака товара 1">
+                                <div class="products-items__info">
+                                    <h3>15.6" Игровой ноутбук ASUS G513IE-HN004T</h3>
+                                    <p>Цвет: черный</p>
+                                    <p>Оперативная память: 16 ГБ</p>
+                                </div>
+                                <div class="products-item__count">
+                                    <button class="btn-subtract"><img src="img/icon-btn-minus.svg" alt=""></button>
+                                    1
+                                    <button class="btn-increase"><img src="img/icon-btn-plus.svg" alt=""></button>
+                                </div>
+                                <div class="products-item__price">
+                                    <span class="basket__new-price">109 090 ₽</span>
+                                    <span class="basket__old-price">140 590 ₽</span>
+                                    <a href="#" class="basket__credit">В кредит от <span>5600 ₽</span></a>
+                                </div>
+                            </div>
+                            <div class="basket__products-item">
+                                <input type="checkbox" name="basket" value="select item"  lang="ru">
+                                <img src="img/product-2.jpg" alt="Картинака товара 1">
+                                <div class="products-items__info">
+                                    <h3>Постельное белье</h3>
+                                    <p>Цвет: белый</p>
+                                    <p>Размер: Евро, двуспальное</p>
+                                </div>
+                                <div class="products-item__count">
+                                    <button class="btn-subtract"><img src="img/icon-btn-minus.svg" alt=""></button>
+                                    1
+                                    <button class="btn-increase"><img src="img/icon-btn-plus.svg" alt=""></button>
+                                </div>
+                                <div class="products-item__price">
+                                    <span class="basket__new-price">3902 ₽</span>
+                                    <span class="basket__old-price">4490 ₽</span>
+                                    <a href="#" class="basket__credit">В кредит от <span>560 ₽</span></a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="basket__delivery">
+                        <div class="basket__delivery-title">
+                            <h2>Способ доставки</h2>
+                            <button>Изменить</button>
+                        </div>
+                        <div class="basket__delivery-info">
+                            <div class="delivery-info__left">
+                                <span>Пункт выдачи</span>
+                                <span>Стоимость доставки</span>
+                                <p>10-13 февраля</p>
+                            </div>
+                            <div class="delivery-info__right">
+                                <p>г. Москва (Московская область), улица Павлика Морозова, д. 48, (Пункт выдачи), Ежедневно 10:00-21:00</p>
+                                <p>Бесплатно</p>
+                                <div class="delivery-info__img">
+                                    <!-- <img src="img/product-2.jpg" alt="Картинака товара 1">
+                                    <img src="img/product-1.jpg" alt="Картинака товара 1"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="basket__result">
+                    <div class="basket__result-header">
+                        <div class="basket__result-left">
+                            <p>Итого</p>
+                            <span class="basket__result-count"></span>
+                            <span>Скидка</span>
+                            <span>Доставка</span>
+                        </div>
+                        <div class="basket__result-right">
+                            <p class="basket__result-price-new"></p>
+                            <span class="basket__result-price"></span>
+                            <span class="basket__result-discount"></span>
+                            <span>Бесплатно</span>
+                        </div>
+                    </div>
+                    <div class="basket__result-delivery">
+                        <p>Доставка<span>Пункт выдачи</span></p>
+                        <p>Ежедневно 10:00 - 21:00</p>
+                        <p>г. Москва (Московская область), улица Павлика Морозова, д. 48</p>
+                        <p>Дата:<span>10-13 февраля</span></p>
+                        <p>Оплата:<span>Картой</span></p>
+                    </div>
+                    <button class="btn-order">Заказать</button>
+                    <label class="result__label">
+                        <input type="checkbox" name="basket" value="select all"  lang="ru">
+                        <p>Согласен с условиями<a href="#">правил пользования торговой площадкой и правилами возврата</a></p>   
+                    </label>
+                </div>
+            </section>
+            <section class="recommendations">
+                <h3 class="recommendations__title">Это выгодно!</h3>
+                <!-- <ul class="sale__list">
+                    <li class="sale__item sale__item_01" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-1.avif" type="image/avif">
+                            <source srcset="img/sale-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-1.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">1299 ₽</span>
+                            <span class="price-full">2598 ₽</span>
+                        </div>
+                        <p class="sale__description">Пара футболок</p>
+                    </li>
+                    <li class="sale__item sale__item_02" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-2.avif" type="image/avif">
+                            <source srcset="img/sale-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-2.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">2099₽</span>
+                            <span class="price-full">5938 ₽</span>
+                        </div>
+                        <p class="sale__description">Кроссовки</p>   
+                    </li>
+                    <li class="sale__item sale__item_03" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-3.avif" type="image/avif">
+                            <source srcset="img/sale-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-3.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">3902 ₽</span>
+                            <span class="price-full">4490 ₽</span>
+                        </div>
+                        <p class="sale__description">Постельное белье</p>
+                    </li>
+                    <li class="sale__item sale__item_04" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-4.avif" type="image/avif">
+                            <source srcset="img/sale-4.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-4.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">2999 ₽</span>
+                            <span class="price-full">6030 ₽</span>
+                        </div>
+                        <p class="sale__description">Фен</p>
+                    </li>
+                    <li class="sale__item sale__item_05" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-5.avif" type="image/avif">
+                            <source srcset="img/sale-5.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-5.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">3902 ₽</span>
+                            <span class="price-full">4490 ₽</span>
+                        </div>
+                        <p class="sale__description">Постельное белье</p>
+                    </li>
+                    <li class="sale__item sale__item_06" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-6.avif" type="image/avif">
+                            <source srcset="img/sale-6.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-6.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">2999 ₽</span>
+                            <span class="price-full">6030 ₽</span>
+                        </div>
+                        <p class="sale__description">Фен</p>
+                     </li>
+                    <li class="sale__item sale__item_07" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-7.avif" type="image/avif">
+                            <source srcset="img/sale-7.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-7.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">540 ₽</span>
+                            <span class="price-full">890 ₽</span>
+                        </div>
+                        <p class="sale__description">Варежки-мишки</p>
+                    </li>
+                    <li class="sale__item sale__item_08" >
+                        <picture>
+                            <source srcset="img/sale-8.avif" type="image/avif">
+                            <source srcset="img/sale-8.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-8.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">1299 ₽</span>
+                            <span class="price-full">2598 ₽</span>
+                        </div>
+                        <p class="sale__description">Пара футболок</p>
+                    </li>
+                </ul> -->
+            </section>
+        </div>   
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__item footer__logo">
+                    <a href="#" class="logo"><img src="img/logo-footer.svg" alt="Иконка логотипа"></a>
+                </div>
+                <div class="footer__item footer__catalog" >
+                    <h3>Каталог</h3>
+                    <nav>
+                        <ul class="footer__list footer__list--columns">
+                            <li><a href="#">Смартфоны</a></li>
+                            <li><a href="#">Ноутбуки</a></li>
+                            <li><a href="#">Ювелирные изделия</a></li>
+                            <li><a href="#">Одежда</a></li>
+                            <li><a href="#">Бытовая техника</a></li>
+                            <li><a href="#">Бытовая химия</a></li>
+                            <li><a href="#">Книги и журналы</a></li>
+                            <li><a href="#">Домашний текстиль</a></li>
+                            <li><a href="#">Электроника</a></li>
+                            <li><a href="#">Косметика</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item footer__buyers">
+                    <h3>Покупателям</h3>
+                    <nav>
+                        <ul class="footer__list">
+                            <li><a href="#">Оплата заказа</a></li>
+                            <li><a href="#">Условия доставки</a></li>
+                            <li><a href="#">Условия возврата заказа</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item footer__contacts" >
+                    <h3>Контакты</h3>
+                    <nav>
+                        <ul class="footer__list footer__list--saocial">
+                            <li><a href="tel:89378393261" class="tel-link">Тел: +7 937 839 23-61</a></li>
+                            <li><a href="OnlineShop@gmail.com" class="mail-link">Email: OnlineShop@gmail.com</a></li>
+                            <li>
+                                <ul class="social-links"> 
+                                  <li><a href="https://www.whatsapp.com/" target="_blank"><img src="./img/watsap-icon.svg" alt="Ссылка Ватсап"></a></li>
+                                  <li><a href="https://instagram.com/" target="_blank"><img src="./img/instagram-icon.svg" alt="Ссылка Инстаграмм"></a></li>
+                                  <li><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube-icon.svg" alt="Ссылка Ютуб"></a></li>
+                                  <li><a href="https://facebook.com" target="_blank"><img src="./img/fecebook-icon.svg" alt="Ссылка Фейсбук"></a></li>
+                                  <li><a href="https://telegram.org" target="_blank"><img src="./img/telegam-icon.svg" alt="Ссылка Телеграмм"></a></li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© OnlineShop, 2021</p>
+                <div class="footer__bottom--wrapper">
+                    <p>Design by Anastasia Ilina</p>
+                    <a href="mailto:Tg: @Mrshmallowww" class="footer__mail">Tg: @Mrshmallowww</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

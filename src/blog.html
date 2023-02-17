@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopOnline</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/blog.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="Иконка логотипа"></a>
+            <a href="#" class="header__menu">Меню</a>
+            <form class="header__form">
+                <input name="search" placeholder="Я ищу..." type="search">
+                <button type="submit" aria-label="Кнопка поиска"></button>
+              </form>
+              <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        <img src="img/icon-profile.svg" alt="иконка профиля">
+                        <p>Профиль</p>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        <img src="img/icon-cart.svg" alt="иконка козины">
+                        <p>Корзина</p>
+                    </a>
+                </li>
+                <li class="header__item" >
+                    <a href="#" class="header__link">
+                        <img src="img/icon-favorite.svg" alt="иконка избранного">
+                        <p>Избранное</p>
+                    </a>
+                </li>
+              </ul>
+        </div>
+    </header>
+    <main class="blog">
+        <div class="container">
+            <nav class="breadcrams">
+                <ul class="breadcrams__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrams__item" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a class="breadcrams__link" itemprop="item" href="index.html">
+                      <span itemprop="name">Главная</span></a>
+                      <meta itemprop="position" content="1" />
+                    </li>
+                    <li>
+                        <img src="/img/icon-arrow.svg" alt="">
+                    </li>
+                    <li class="breadcrams__item" itemprop="itemListElement" itemscope
+                        itemtype="https://schema.org/ListItem">
+                      <a class="breadcrams__link" itemprop="item" href="#">
+                      <span itemprop="name">Блог</span></a>
+                      <meta itemprop="position" content="2" />
+                    </li>
+                  </ul>
+            </nav>
+            <div class="blog__carts"> 
+                <!-- <ul class="news-wrapper">
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-1.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Как ухаживать за обувью из кожи</a>
+                            <p>22 октября 2021, 12:45</p>
+                            <div class = "icons-wrapper">
+                                <p>1.2K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-2.png" alt="">
+                         </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Неизведанные места озера Байкал</a>
+                            <p>06 марта 2020, 15:34</p>
+                            <div class = "icons-wrapper">
+                                <p>2.3K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a class="img-crop">
+                             <img src="./img/blog-img-3.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Можно ли приручить дикую лису?</a>
+                            <p>19 октября 2021, 10:23</p>
+                            <div class = "icons-wrapper">
+                                <p>1.9K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a class="img-crop">
+                            <img src="./img/blog-img-4.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Лучшие модели ноутбуков для фриланса</a>
+                            <p>03 август 2021, 12:54</p>
+                            <div class = "icons-wrapper">
+                                <p>1.6K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-5.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">10 необычных блюд 
+                                из мандаринов</a>
+                            <p>25 апреля 2020, 12:24</p>
+                            <div class = "icons-wrapper">
+                                <p>3.2K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-6.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Люди, изменившие digital индустрию</a>
+                            <p>24 мая 2020, 19:31</p>
+                            <div class = "icons-wrapper">
+                                <p>3.6K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">                   
+                            <img src="./img/blog-img-7.png" alt="">
+                        </a> 
+                        <div class="news-text__wrapper">
+                            <a href="#">Современные программы для дизайнера</a>
+                            <p>22 октября 2021, 12:45</p>
+                            <div class = "icons-wrapper">
+                                <p>1.2K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                             <img src="./img/blog-img-8.png" alt="">
+                        </a> 
+                        <div class="news-text__wrapper">
+                            <a href="#">Самый неприхотливые домашние растения</a>
+                            <p>19 октября 2021, 10:23</p>
+                            <div class = "icons-wrapper">
+                                <p>1.7K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-9.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Как вырастить герберу 
+                                в домашних условиях</a>
+                            <p>06 марта 2020, 15:34</p>
+                            <div class = "icons-wrapper">
+                                <p>1.2K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-10.png" alt="">
+                        </a>          
+                        <div class="news-text__wrapper">
+                            <a href="#">Идеи для современного интерьера</a>
+                            <p>29 октября 2020, 12:42</p>
+                            <div class = "icons-wrapper">
+                                <p>1.9K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-11.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Искусство фотографии</a>
+                            <p>21 декабря 2020, 15:34</p>
+                            <div class = "icons-wrapper">
+                                <p>3.1K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news-cart">
+                        <a href="#" class="img-crop">
+                            <img src="./img/blog-img-12.png" alt="">
+                        </a>
+                        <div class="news-text__wrapper">
+                            <a href="#">Необычная пряжа</a>
+                            <p>27 нобря 2020, 08:24</p>
+                            <div class = "icons-wrapper">
+                                <p>0.6K</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                    </li>         
+                </ul> -->
+            </div>
+
+            <div class="blog__pagination">
+                <div class="container container-pagination">
+                 
+                 </div>     
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__item footer__logo">
+                    <a href="#" class="logo"><img src="img/logo-footer.svg" alt="Иконка логотипа"></a>
+                </div>
+                <div class="footer__item footer__catalog" >
+                    <h3>Каталог</h3>
+                    <nav>
+                        <ul class="footer__list footer__list--columns">
+                            <li><a href="#">Смартфоны</a></li>
+                            <li><a href="#">Ноутбуки</a></li>
+                            <li><a href="#">Ювелирные изделия</a></li>
+                            <li><a href="#">Одежда</a></li>
+                            <li><a href="#">Бытовая техника</a></li>
+                            <li><a href="#">Бытовая химия</a></li>
+                            <li><a href="#">Книги и журналы</a></li>
+                            <li><a href="#">Домашний текстиль</a></li>
+                            <li><a href="#">Электроника</a></li>
+                            <li><a href="#">Косметика</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item footer__buyers">
+                    <h3>Покупателям</h3>
+                    <nav>
+                        <ul class="footer__list">
+                            <li><a href="#">Оплата заказа</a></li>
+                            <li><a href="#">Условия доставки</a></li>
+                            <li><a href="#">Условия возврата заказа</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item footer__contacts" >
+                    <h3>Контакты</h3>
+                    <nav>
+                        <ul class="footer__list footer__list--saocial">
+                            <li><a href="tel:89378393261" class="tel-link">Тел: +7 937 839 23-61</a></li>
+                            <li><a href="OnlineShop@gmail.com" class="mail-link">Email: OnlineShop@gmail.com</a></li>
+                            <li>
+                                <ul class="social-links"> 
+                                  <li><a href="https://www.whatsapp.com/" target="_blank"><img src="./img/watsap-icon.svg" alt="Ссылка Ватсап"></a></li>
+                                  <li><a href="https://instagram.com/" target="_blank"><img src="./img/instagram-icon.svg" alt="Ссылка Инстаграмм"></a></li>
+                                  <li><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube-icon.svg" alt="Ссылка Ютуб"></a></li>
+                                  <li><a href="https://facebook.com" target="_blank"><img src="./img/fecebook-icon.svg" alt="Ссылка Фейсбук"></a></li>
+                                  <li><a href="https://telegram.org" target="_blank"><img src="./img/telegam-icon.svg" alt="Ссылка Телеграмм"></a></li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© OnlineShop, 2021</p>
+                <div class="footer__bottom--wrapper">
+                    <p>Design by Anastasia Ilina</p>
+                    <a href="mailto:Tg: @Mrshmallowww" class="footer__mail">Tg: @Mrshmallowww</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+   <!-- <a href="#" class="btn-arrow btn-arrow-left"><img src="./img/icon-left-arrow.svg" alt=""></a>
+        <ul class="pagination-list">
+            <li class="pagination-item active"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+        </ul>
+        <a href="#" class="btn-arrow"><img src="./img/icon-right-arrow.svg" alt=""></a> -->

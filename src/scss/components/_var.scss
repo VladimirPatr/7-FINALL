@@ -1,0 +1,36 @@
+
+// Переменные
+$color-main: #2D2D2D;
+$color-secondary: #8F8F8F;
+$color-active: #3670C7;
+
+$font: Lato, sen-serif;
+
+// Шаблоны свойств
+
+%discountCircle {
+    display: inline-block;;
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: #FFBD13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+
+// Миксины
+@mixin font($name, $wight) {
+    font: {
+        family: $name;
+        weight: $wight;
+        display: swap;
+    }
+    src: url("../fonts/#{name}-#{wight}.woff2") format("woff2"),
+         url("../fonts/#{name}-#{wight}.woff") format("woff"),
+}

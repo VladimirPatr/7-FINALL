@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/category.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container container_header">
+            <a href="#" class="logo"><img src="img/logo.svg" alt="Иконка логотипа"></a>
+            <a href="#" class="header__menu">Меню</a>
+            <form class="header__form">
+                <input name="search" placeholder="Я ищу..." type="search">
+                <button type="submit" aria-label="Кнопка поиска"></button>
+              </form>
+              <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        <img src="img/icon-profile.svg" alt="иконка профиля">
+                        <p>Профиль</p>
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">
+                        <img src="img/icon-cart.svg" alt="иконка козины">
+                        <p>Корзина</p>
+                    </a>
+                </li>
+                <li class="header__item" >
+                    <a href="#" class="header__link">
+                        <img src="img/icon-favorite.svg" alt="иконка избранного">
+                        <p>Избранное</p>
+                    </a>
+                </li>
+              </ul>
+        </div>
+    </header>
+    <main class="cards">
+        <div class="container">
+            <section class="recommendations">
+                <!-- <h3 class="recommendations__title">Электроника</h3>
+                <ul class="sale__list">
+                    <li class="sale__item sale__item_01" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-1.avif" type="image/avif">
+                            <source srcset="img/sale-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-1.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">1299 ₽</span>
+                            <span class="price-full">2598 ₽</span>
+                        </div>
+                        <p class="sale__description">Пара футболок</p>
+                    </li>
+                    <li class="sale__item sale__item_02" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-2.avif" type="image/avif">
+                            <source srcset="img/sale-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-2.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">2099₽</span>
+                            <span class="price-full">5938 ₽</span>
+                        </div>
+                        <p class="sale__description">Кроссовки</p>   
+                    </li>
+                    <li class="sale__item sale__item_03" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-3.avif" type="image/avif">
+                            <source srcset="img/sale-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-3.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">3902 ₽</span>
+                            <span class="price-full">4490 ₽</span>
+                        </div>
+                        <p class="sale__description">Постельное белье</p>
+                    </li>
+                    <li class="sale__item sale__item_04" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-4.avif" type="image/avif">
+                            <source srcset="img/sale-4.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-4.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">2999 ₽</span>
+                            <span class="price-full">6030 ₽</span>
+                        </div>
+                        <p class="sale__description">Фен</p>
+                    </li>
+                    <li class="sale__item sale__item_05" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-5.avif" type="image/avif">
+                            <source srcset="img/sale-5.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-5.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">3902 ₽</span>
+                            <span class="price-full">4490 ₽</span>
+                        </div>
+                        <p class="sale__description">Постельное белье</p>
+                    </li>
+                    <li class="sale__item sale__item_06" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-6.avif" type="image/avif">
+                            <source srcset="img/sale-6.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-6.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">2999 ₽</span>
+                            <span class="price-full">6030 ₽</span>
+                        </div>
+                        <p class="sale__description">Фен</p>
+                     </li>
+                    <li class="sale__item sale__item_07" tabindex="0">
+                        <picture>
+                            <source srcset="img/sale-7.avif" type="image/avif">
+                            <source srcset="img/sale-7.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-7.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">540 ₽</span>
+                            <span class="price-full">890 ₽</span>
+                        </div>
+                        <p class="sale__description">Варежки-мишки</p>
+                    </li>
+                    <li class="sale__item sale__item_08" >
+                        <picture>
+                            <source srcset="img/sale-8.avif" type="image/avif">
+                            <source srcset="img/sale-8.webp" type="image/webp">
+                            <img loading="lazy" src="img/sale-8.jpg" alt="Картинка скидок" class="stock__img" width="325" height="295">   
+                        </picture>
+                        <div class="sale__wrapper-prices">
+                            <span class="price-sale">1299 ₽</span>
+                            <span class="price-full">2598 ₽</span>
+                        </div>
+                        <p class="sale__description">Пара футболок</p>
+                    </li>
+                </ul> -->
+            </section>
+        </div>   
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__item footer__logo">
+                    <a href="#" class="logo"><img src="img/logo-footer.svg" alt="Иконка логотипа"></a>
+                </div>
+                <div class="footer__item footer__catalog" >
+                    <h3>Каталог</h3>
+                    <nav>
+                        <ul class="footer__list footer__list--columns">
+                            <li><a href="#">Смартфоны</a></li>
+                            <li><a href="#">Ноутбуки</a></li>
+                            <li><a href="#">Ювелирные изделия</a></li>
+                            <li><a href="#">Одежда</a></li>
+                            <li><a href="#">Бытовая техника</a></li>
+                            <li><a href="#">Бытовая химия</a></li>
+                            <li><a href="#">Книги и журналы</a></li>
+                            <li><a href="#">Домашний текстиль</a></li>
+                            <li><a href="#">Электроника</a></li>
+                            <li><a href="#">Косметика</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item footer__buyers">
+                    <h3>Покупателям</h3>
+                    <nav>
+                        <ul class="footer__list">
+                            <li><a href="#">Оплата заказа</a></li>
+                            <li><a href="#">Условия доставки</a></li>
+                            <li><a href="#">Условия возврата заказа</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item footer__contacts" >
+                    <h3>Контакты</h3>
+                    <nav>
+                        <ul class="footer__list footer__list--saocial">
+                            <li><a href="tel:89378393261" class="tel-link">Тел: +7 937 839 23-61</a></li>
+                            <li><a href="OnlineShop@gmail.com" class="mail-link">Email: OnlineShop@gmail.com</a></li>
+                            <li>
+                                <ul class="social-links"> 
+                                  <li><a href="https://www.whatsapp.com/" target="_blank"><img src="./img/watsap-icon.svg" alt="Ссылка Ватсап"></a></li>
+                                  <li><a href="https://instagram.com/" target="_blank"><img src="./img/instagram-icon.svg" alt="Ссылка Инстаграмм"></a></li>
+                                  <li><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube-icon.svg" alt="Ссылка Ютуб"></a></li>
+                                  <li><a href="https://facebook.com" target="_blank"><img src="./img/fecebook-icon.svg" alt="Ссылка Фейсбук"></a></li>
+                                  <li><a href="https://telegram.org" target="_blank"><img src="./img/telegam-icon.svg" alt="Ссылка Телеграмм"></a></li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© OnlineShop, 2021</p>
+                <div class="footer__bottom--wrapper">
+                    <p>Design by Anastasia Ilina</p>
+                    <a href="mailto:Tg: @Mrshmallowww" class="footer__mail">Tg: @Mrshmallowww</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
